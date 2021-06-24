@@ -1,0 +1,264 @@
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    padding: 20px;
+    height: 20px;
+  }
+
+  section {
+    background: #38545d;
+    color: white;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20;
+  }
+
+  ul:visited{
+    color: white;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 200px;
+    text-decoration: none;
+  }
+
+footer {
+    background: #38545d;
+    color: white;
+    text-decoration: none;
+  }
+  /*Makes two Columns for Footer */
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Create 2x2 for format */
+.fourColumns {
+  float: left;
+  width: 40%;
+  padding: 10px 30px;
+  height: 200px;
+}
+
+/* Clear floats after the columns */
+.fourRows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create three equal columns that floats next to each other */
+.threeColumns {
+  float: left;
+  width: 30%;
+  padding: 10px 30px;
+  height: 350px;
+}
+
+/* Clear floats after the columns */
+.threeRows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:link{
+  line-height: 30px;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color:white;
+  background-color:transparent;
+  text-decoration: underline;
+}
+
+h1{
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+h2{
+  font-size: 40px;
+  text-decoration: underline;
+  padding: 16px 20px;
+}
+
+h3{
+  font-size: 25px;
+  padding: 16px 20px;
+}
+
+hr1 { 
+  display: block;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+p{
+  font-size: 20px;
+  padding: 16px 20px;
+}
+.p1{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.p2{
+  text-indent: 38px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.description{
+  text-align: center; 
+  font-size: 20px;
+}
+
+.aboutme{
+  padding: 10px 20px;
+  background:black;
+  color: white;
+  border-color: black;
+  border-style: solid;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color:transparent;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  line-height: 20px;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* The dropdown menu */
+.dropdown {
+  float: right;
+  overflow: hidden;
+  right: 20;
+}
+
+.dropdown:before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  border-left: 5px solid transparent;
+  border-right:5px solid transparent;
+  border-top:  5px solid white;
+}
+
+/* Dropdown button */
+.dropbtn {
+  line-height: 15px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  cursor: pointer;
+}
+
+
+/* Dropdown content*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #38545d;
+  min-width: 160px;
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  top: 0;
+  padding: 7px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add an underline to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* Dims the Banner image */
+.banner {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("home.jpg");
+
+/* Set a specific height */
+height: 55%;
+
+/* makes it look nice on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+position: relative;
+border-bottom: 0;
+}
+
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
